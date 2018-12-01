@@ -1,7 +1,14 @@
-.col-12
+.footer_box
   margin-top: 20px
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  align-items: flex-start
+  .footer_logo
+    display: flex
+    margin: 20px 0
+
   img
-    float: left
     margin-right: 10px
   h3
     margin-top: 10px
@@ -24,10 +31,11 @@
     color: #323232
     font-family: 'Montserrat', sans-serif
     font-size: 14px
-    font-weight: 500
+    font-weight: 600
 
   ul
     list-style: none
+    padding: 0
 
     li
       color: #8d81ac
@@ -46,5 +54,24 @@
     font-family: 'Montserrat', sans-serif
     font-size: 10px
     font-weight: 600
+
+/* Screen Sizes 700 px and Up */
+@media (min-width: 700px)
+  .footer_box
+
+    h3
+      font-size: 24px
+    p
+      font-size: 14px
+    h4
+
+      font-size: 16px
+    ul
+      li
+        font-size: 14px
+    h2
+      font-size: 27px
+
+
 
 
